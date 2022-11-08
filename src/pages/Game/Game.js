@@ -1,5 +1,4 @@
 import "../../App.css";
-import React, { useState } from "react";
 import Timer from "../../components/Timer/Timer";
 import SpaceShip from "../../components/SpaceShip/SpaceShip";
 import useAllHighScores from "../../hooks/useAllHighScores";
@@ -8,7 +7,6 @@ export default function Game() {
   const { allScores } = useAllHighScores();
 
   console.log(allScores)
-  const [movement, setMovement] = useState("2px solid black");
 
   // let img = new Image();
 
@@ -31,11 +29,11 @@ export default function Game() {
   // if space -> make the use effect
   // get spaceship margin location to render the laser
 
-  const handleKeyDown = (event) => {
-    console.log("User pressed: ", event.key);
-  };
+  // const handleKeyDown = (event) => {
+  //   console.log("User pressed: ", event.key);
+  // };
 
-  const [marginLeft, setMarginLeft] = useState(0);
+  // const [marginLeft, setMarginLeft] = useState(0);
   // useEffect(() => {
   //   function handleKeyDown(e) {
   //     console.log(e.keyCode);
@@ -72,7 +70,7 @@ export default function Game() {
   //     document.removeEventListener("keydown", handleKeyDown);
   //   };
   // }, [marginLeft]);
-  console.log(marginLeft);
+  // console.log(marginLeft);
   console.log(window.innerWidth);
 
   return (

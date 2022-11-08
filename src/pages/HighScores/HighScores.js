@@ -1,7 +1,6 @@
 import useAllHighScores from "../../hooks/useAllHighScores";
 import styled from "styled-components";
 import bgImg from "../../assets/background.png";
-import { useState } from "react";
 import ScoreCard from "../../components/ScoreCard/ScoreCard";
 
 const PageWrapper = styled.div`

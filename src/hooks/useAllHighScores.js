@@ -9,7 +9,6 @@ import getHighScores from "../api/getHighScores";
 export default function useAllHighScores() {
   const [allScores, setAllScores] = useState([]);
   const [isDeleting, setIsDeleting] = useState(false);
-  const [isEditing, setIsEditing] = useState(false);
 
   function updateScore(id, username, score){
     const scoreIds = allScores.map((score)=>{return score._id})
